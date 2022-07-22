@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <link rel="stylesheet" href="index.css">
+  <script src="jquery-3.6.0.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function(){
+      var player;
+      var espacios = [];
+      $('.desactivar').each(function(index, el) {
+        espacios.push(index);
+      });
+      jugabilidad(espacios,player);
+    });
+  </script>
+<title>Tres en Raya</title>
+
+</head>
+<body>
+  <h3 id="tutorial">Elige un personaje</h3>
+  <div class="chose">
+    <button id="playerO">
+      Círculo O
+    </button>
+    <button id="playerX">
+      Equis X
+    </button>
+  </div>
+
+  <div class="parent">
+    <button class="desactivar bordeDerecho bordeDebajo" id="1">1</button>
+    <button class="desactivar bordeDerecho bordeDebajo"id="2">2</button>
+    <button class="desactivar bordeDebajo"id="3">3</button>
+    <button class="desactivar bordeDerecho bordeDebajo"id="4">4</button>
+    <button class="desactivar bordeDerecho bordeDebajo"id="5">5</button>
+    <button class="desactivar bordeDebajo"id="6">6</button>
+    <button class="desactivar bordeDerecho"id="7">7</button>
+    <button class="desactivar bordeDerecho"id="8">8</button>
+    <button class="desactivar "id="9">9</button>
+    <div class="raya "></div>
+  </div>
+  <footer>
+    <button id="reset">Reiniciar</button>
+
+  </footer>
+</body>
+</html>

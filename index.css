@@ -1,0 +1,103 @@
+button {
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+}
+img { width: 80%}
+button:disabled {
+cursor: not-allowed;
+}
+button#playerO, button#playerX{
+  background-color: rgb(245, 245, 245);
+}
+button#playerO:disabled, button#playerX:disabled{
+  background-color: transparent;
+}
+.parent {
+  position: absolute;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(3,100px);
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.desactivar{
+  padding: 0px;
+
+}
+
+#reset{
+  position: relative;
+  text-align: center;
+  top: 400px;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 25px;
+  width: 100px;
+}
+body{
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.chose{
+  display: grid;
+  height: 100px;
+  grid-gap: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.bordeDerecho {border-right: 5px solid black}
+.bordeDebajo {border-bottom: 5px solid black}
+
+.raya{
+  position: absolute;
+  background-color: red;
+}
+/* Horizontal */
+.raya-hor-1{
+  width: 100%;
+  height: 5px;
+  top: 15%
+}
+.raya-hor-2{
+  width: 100%;
+  height: 5px;
+  top: 48%
+}
+.raya-hor-3{
+  width: 100%;
+  height: 5px;
+  top: 82.5%
+}
+/* Vertical */
+.raya-ver-1{
+  width: 5px;
+  height: 100%;
+  left: 15%
+}
+.raya-ver-2{
+  width: 5px;
+  height: 100%;
+  left: 48.45%
+}
+.raya-ver-3{
+  width: 5px;
+  height: 100%;
+  left: 82.5%
+}
+/* Diagonal*/
+.raya-dia-1{
+  width: 100%;
+  height: 5px;
+  top: 49%;
+  transform: skewY(45deg);
+}
+.raya-dia-2{
+  width: 100%;
+  height: 5px;
+  top: 49%;
+  transform: skewY(-45deg);
+}
